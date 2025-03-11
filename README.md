@@ -1,1 +1,5 @@
-# Projet Python sur Titanic
+# TITANIC
+
+DUGAST Aurélien
+NGONO ABANDA Christian
+SABINOTTO Claude
