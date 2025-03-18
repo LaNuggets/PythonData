@@ -3,6 +3,8 @@ import pandas as pd
 df = pd.read_csv("train.csv")
 
 
+print(df.isna().sum())
+
 # df['isMale'] = df["Sex"].apply(lambda x: 1 if x == 'male' else 0) # add column isMale 1 or 0
 
 # df=df[df["Survived"]==1]

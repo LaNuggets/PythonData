@@ -15,3 +15,11 @@ meilleur taux de surive :
 femme
 1class
 -10ans
+
+
+
+Valeur manquante :
+
+Age = 177
+cabin = 687
+Embarked = 2
