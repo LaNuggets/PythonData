@@ -12,6 +12,8 @@ df = df.drop('Ticket', axis=1)
 df = df.drop('Cabin', axis=1)
 df = df.drop('Embarked', axis=1)
 
+df['Age'] = df['Age'].fillna(df['Age'].mean())
+
 
 X = df.drop('Survived', axis=1)
 y = df['Survived']
