@@ -1,0 +1,25 @@
+CSV size : [891 rows x 12 columns]
+
+idée de réflexion :
+
+Vérifier qui a plus de survie entre :
+
+male/female
+1class/2class/3class
+-20ans/+20ans
+
+
+
+
+meilleur taux de surive :
+femme
+1class
+-10ans
+
+
+
+Valeur manquante :
+
+Age = 177
+cabin = 687
+Embarked = 2
