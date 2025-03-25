@@ -6,13 +6,14 @@ from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
 
 df = pd.read_csv("train.csv")
 
+df['isMale'] = df["Sex"].apply(lambda x: 1 if x == 'male' else 0)
+df['Age'] = df['Age'].fillna(df['Age'].mean())
+
 df = df.drop('Name', axis=1)
 df = df.drop('Sex', axis=1)
 df = df.drop('Ticket', axis=1)
 df = df.drop('Cabin', axis=1)
 df = df.drop('Embarked', axis=1)
-
-df['Age'] = df['Age'].fillna(df['Age'].mean())
 
 
 X = df.drop('Survived', axis=1)
