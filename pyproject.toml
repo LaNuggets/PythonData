@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-data-project"
+version = "0.1.0"
+description = "Un projet Python pour analyser et modéliser des données"
+authors = ["christian <christian.ngonoabanda@ynov.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10.12"
+pandas = "^1.5.0"
+scikit-learn = "^1.0"
+seaborn = "^0.12.2"
+matplotlib = "^3.5.3"
+
+[build-system]
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.5" 
