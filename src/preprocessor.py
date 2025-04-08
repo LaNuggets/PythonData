@@ -24,4 +24,4 @@ class TitanicPreprocessor:
     def fit_transform(self, df):
       self.fit(df)
       X, y = self.transform(df)
-      return self.transform(df)
+      return X, y
