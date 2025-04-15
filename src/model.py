@@ -1,5 +1,7 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
+
 import pandas as pd
 
 class TitanicModel:
@@ -16,3 +18,13 @@ class TitanicModel:
     def predict(self, X_test):
         y_pred = self.model.predict(X_test)
         return y_pred
+    
+    def evaluate(self, y_test, y_pred):
+        acc = accuracy_score(y_test, y_pred) # calcule de l'accuracy
+        f1 = f1_score(y_test, y_pred, average='binary')
+        cm = confusion_matrix(y_test, y_pred) # création de matrice de confusion
+        print(cm)
+        print("F1-score {f1}")
+        print("The accuracy of the model is {acc}")
+
+        return acc
